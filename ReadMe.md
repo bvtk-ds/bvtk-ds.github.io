@@ -6,7 +6,7 @@ And because you may want to reduce information on the page even more or make thi
 ## Parameters
 Here are instructions on various parameters that work for BVTK with examples of how it works.
 
-**columns**
+### columns
 This is a way to reduce which columns show up on screen. It goes in order from left to right, Backlog being your 0 column and Complete being your 3 column. You can exclude multiple columns at once by using "," as a separater.
 
 ***Examples:***
@@ -20,7 +20,7 @@ This is a way to reduce which columns show up on screen. It goes in order from l
   * [https://bvtk-ds.github.io/?columns=0,3](https://bvtk-ds.github.io/?columns=0,3)
 		
 
-**exclude**
+### exclude
 Exclude is an Trello Board exclusion filter. By default, every kind of board is include except for Organization owned boards. You can exclude multiple boards at once by using "," as a separater.
 
 ***Examples:***
@@ -28,7 +28,7 @@ Exclude is an Trello Board exclusion filter. By default, every kind of board is 
   * [https://bvtk-ds.github.io/?exclude=Big View Trello Kanban](https://bvtk-ds.github.io/?exclude=Big View Trello Kanban)
 		
 
-**ts**
+### ts
 Adjusts the text size of the task cards only. The size is evaluated as *em* values and defaults to 1 em.
 
 ***Examples:***
