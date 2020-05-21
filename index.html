@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://api.trello.com/1/client.js?key=7b8b799d61050cff6e7bef50e382a852"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" href="main_style.css">
+		<link rel="stylesheet" href="custom_style.css">
+		<title>Big View Trello Kanban</title>
+	</head>
+	<body>
+		<div class="trello-header">
+			<div class="vertical-center-left">
+				<div id="version-num">Version 1.1</div>
+			</div>
+			<div class="vertical-center">
+				<img class="avatar" id="travatar" src=""/>
+				<div class="username" id="trusername">No Username</div>
+			</div>
+		</div>
+		<div class="info-area">
+			<task-col id="column-0" header="Backlog" task-id="backlog-cards">
+			</task-col>
+			<task-col id="column-1" header="To Do" task-id="to-do-cards">
+			</task-col>
+			<task-col id="column-2" header="In Progress" task-id="progress-cards">
+			</task-col>
+			<task-col id="column-3" header="Complete" task-id="complete-cards">
+			</task-col>
+		</div>
+	</body>
+</html>

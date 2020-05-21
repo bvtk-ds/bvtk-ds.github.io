@@ -1,0 +1,170 @@
+:root {
+  --deep-background-color: rgb(15, 15, 15);
+  --mid-background-color: rgb(30, 30, 30);
+  --high-background-color: rgb(42, 42, 42);
+  --font-white: rgb(235, 235, 235);
+  --regular-use-color: rgb(208, 166, 255);
+  --column-count: 4;
+  --column-width: calc(100vw / var(--column-count));
+  --task-text-size: 1em;
+}
+
+html, head, body {
+  border: 0px;
+  margin: 0px;
+  background: var(--deep-background-color);
+  color: var(--font-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This is the columns for tasks */
+task-col {
+  background-color: var(--mid-background-color);
+  margin-left: 3px;
+  margin-top: 8px;
+  margin-right: 3px;
+  height: calc(100vh - 4em);
+  width: var(--column-width);
+  border-radius: 5px;
+}
+
+#task-display {
+  margin: 8px 8px;
+  color: var(--font-white);
+}
+
+#task-table {
+  color: var(--font-white);
+}
+
+.trello-header {
+  margin: 0px 0px 0px 0px;
+  height: 48px;
+  background-color: var(--mid-background-color);
+  box-shadow: 0px 0px 5px #222222;
+}
+
+#travatar {
+  width: 32px;
+  height: 32px;
+  padding: 4px
+}
+
+#trusername {
+  padding: 4px 8px;
+  border-radius: 7px;
+  border: 2px solid var(--regular-use-color);
+  background-color: var(--regular-use-color);
+  color: var(--deep-background-color);
+  font-weight: bold;
+}
+
+#version-num {
+  font-weight: 600;
+  font-size: 0.7em;
+}
+
+.vertical-center {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  float: right;
+  padding-right: 16px;
+}
+
+.vertical-center-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  float: left;
+  padding-left: 16px;
+}
+
+.info-area {
+  display: flex;
+  padding: 0px 5px;
+}
+
+.task-header {
+  color: var(--font-white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1.5em;
+  /* text-decoration: underline; */
+}
+
+.task-display {
+  height: calc(100% - 3em);
+  overflow-y: auto;
+}
+
+.task-table {
+  padding: 8px 4px;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.trello-card {
+  width: auto;
+}
+
+.trello-card-data {
+  margin: 2px 2px 2px 2px;
+  padding: 4px 8px 6px 8px;
+  border: 2px solid var(--high-background-color);
+  background-color: var(--high-background-color);
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.trello-task-text {
+  padding-bottom: 2px;
+  font-weight: 600;
+  font-size: var(--task-text-size);
+}
+
+.trello-card-members {
+}
+
+.trello-avatar {
+  width: 32px;
+  height: 32px;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+#column-0-header, #backlog-cards {
+  color: rgb(174, 173, 236);
+}
+
+#column-1-header, #to-do-cards{
+  color: rgb(255, 195, 195);
+}
+
+#column-2-header, #progress-cards {
+  color: rgb(253, 242, 181);
+}
+
+#column-3-header, #complete-cards {
+  color: rgb(195, 252, 193);
+}
+
+#card-generic {
+  color: var(--regular-use-color);
+}
+
+/* #card-backlog, #backlog-cards, #card-todo, #to-do-cards, #card-inprogress, #progress-cards, #card-complete, #complete-cards {
+  color: var(--font-white);
+} */

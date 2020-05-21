@@ -1,0 +1,59 @@
+:root {
+  --column-0-visibility: visible;
+  --column-1-visibility: visible;
+  --column-2-visibility: visible;
+  --column-3-visibility: visible;
+  --column-0-padding: 8px 4px 4px 16px;
+  --column-1-padding: 8px 4px 4px 16px;
+  --column-2-padding: 8px 4px 4px 16px;
+  --column-3-padding: 8px 4px 4px 16px;
+
+}
+
+#backlog-cards {
+}
+
+#to-do-cards {
+}
+
+#progress-cards {
+}
+
+#complete-cards {
+}
+
+#column-0 {
+  visibility: var(--column-0-visibility);
+}
+
+#column-1 {
+  visibility: var(--column-1-visibility);
+}
+
+#column-2 {
+  visibility: var(--column-2-visibility);
+}
+
+#column-3 {
+  visibility: var(--column-3-visibility);
+}
+
+#column-0-header {
+  visibility: var(--column-0-visibility);
+  padding: var(--column-0-padding);
+}
+
+#column-1-header {
+  visibility: var(--column-1-visibility);
+  padding: var(--column-1-padding);
+}
+
+#column-2-header {
+  visibility: var(--column-2-visibility);
+  padding: var(--column-2-padding);
+}
+
+#column-3-header {
+  visibility: var(--column-3-visibility);
+  padding: var(--column-3-padding);
+}
