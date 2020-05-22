@@ -59,9 +59,23 @@ task-col {
   font-weight: bold;
 }
 
+#help {
+  margin: 0px 5px;
+  padding: 4px 8px;
+  border-radius: 25px;
+  border: 2px solid var(--regular-use-color);
+  background-color: var(--regular-use-color);
+  color: var(--deep-background-color);
+  font-weight: bold;
+}
+
 #version-num {
   font-weight: 600;
   font-size: 0.7em;
+}
+
+.bubble-link {
+  text-decoration: none;
 }
 
 .vertical-center {

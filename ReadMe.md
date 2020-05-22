@@ -3,6 +3,15 @@
 **BVTK** is a more simplied and larger view of Trello boards, broken into an organized task board in Kanban fashion.
 And because you may want to reduce information on the page even more or make things easier to read, we've provided some paramaters that can adjust your experience.
 
+## Setting up your boards for BVTK
+
+**BVTK** takes advantage of the label system in Trello and it's based off of the color, not text inside it.
+
+**Black** labels are used for Backlog tasks.
+**Yellow** labels are used for To Do tasks.
+**Cyan** labels are used for In Progress tasks.
+**Green** labels are used for Complete tasks.
+
 ## Parameters
 Here are instructions on various parameters that work for BVTK with examples of how it works.
 

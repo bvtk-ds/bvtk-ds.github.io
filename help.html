@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    
+    <link rel="stylesheet" href="help.css">
+		<title>BVTK Help</title>
+  </head>
+  <body>
+    <div>
+      <h1>BVTK Help Page</h1>
+      <p>
+        BVTK is a more simplified and larger view of Trello boards, broken into an organized task board inspired by Kanban boards.</br>
+        Below is a guide on how to use BVTK within Trello as well as ways to improve your experience with it via parameters.</br>
+      </p></br>
+      <h2>Using Trello with BVTK</h2>
+      <p>
+        BVTK takes advantage of the label system in Trello. It's based off of the color of the label and not the text inside it.
+        It looks from the first to last label to determine which column to place the card in.</br></br>
+
+        Backlog tasks need a Black colored label.</br>
+        To Do tasks need a Yellow colored label.</br>
+        In Progress tasks need a Cyan colored label.</br>
+        Complete tasks need a Green colored label.</br>
+      </p>
+      <h2>Parameters</h2>
+      Currently, in order to improve your use of BVTK, you'll have to manually add parameters to the URI.</br>
+      Below are all of the current parameters you can use.</br></br>
+      <h3>columns</h3>
+      This is a way to reduce which columns show up on screen. It goes in order from left to right, Backlog being your 0 column and Complete being your 3 column. You can exclude multiple columns at once by using "," as a separater.</br>
+      <ul>
+        <li>Removing Backlog</li>
+        <ul><li>https://bvtk-ds.github.io/?columns=0</li></ul>
+        <li>Removing Complete</li>
+        <ul><li>https://bvtk-ds.github.io/?columns=3</li></ul>
+        <li>Removing Backlog and Complete</li>
+        <ul><li>https://bvtk-ds.github.io/?columns=0,3</li></ul>
+      </ul>
+
+      <h3>exclude</h3>
+      Exclude is an Trello Board exclusion filter. By default, every kind of board is include except for Organization owned boards. You can exclude multiple boards at once by using "," as a separater.
+      <ul>
+        <li>Removing the Big View Trello Kanban board</li>
+        <ul><li>https://bvtk-ds.github.io/?exclude=Big View Trello Kanban</li></ul>
+      </ul>
+
+      <h3>ts</h3>
+      Adjusts the text size of the task cards only. The size is evaluated as *em* values and defaults to 1 em.
+
+      <ul>
+        <li>Default size enforced</li>
+        <ul><li>https://bvtk-ds-github.io/?ts=1</li></ul>
+        <li>Upping to 1.25em</li>
+        <ul><li>https://bvtk-ds-github.io/?ts=1.25</li></ul>
+      </ul></br></br>
+    </div>
+  </body>
+</html>
